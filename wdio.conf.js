@@ -56,7 +56,7 @@ export const config = {
     // will be called from there.
     //
     specs: [
-        './test/specs/**/*.js'
+        './test/specs/*.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -170,8 +170,8 @@ export const config = {
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
     mochaOpts: {
-    grep: process.env.MOCHA_GREP,
-    timeout: 60000,
+        grep: process.env.MOCHA_GREP,
+        timeout: 60000,
     },
     //
     // =====
