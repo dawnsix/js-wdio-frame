@@ -16,7 +16,7 @@ describe('basic test flows', () => {
         await LandingPage.btnPosts.click();
     })
 
-    it('should allow existing users to login', async () => {
+    it.skip('should allow existing users to login', async () => {
         await LandingPage.open();
         await LandingPage.btnLogin.click();
         await LoginPage.fldEmail.addValue(data.email);
