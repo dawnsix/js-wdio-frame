@@ -1,0 +1,10 @@
+node_modules
+examples
+server
+drivers
+docs
+log
+
+data/environment.js
+*.log
+.env
