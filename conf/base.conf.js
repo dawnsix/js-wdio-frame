@@ -20,7 +20,7 @@ export const config = {
   framework: 'mocha',
   mochaOpts: {
     grep: process.env.MOCHA_GREP,
-    parallel: true,
+    parallelMode: true,
     timeout: 60000,
   },
 };

@@ -171,7 +171,7 @@ export const config = {
     // See the full list at http://mochajs.org/
     mochaOpts: {
         grep: process.env.MOCHA_GREP,
-        parallel: true,
+        parallelMode: true,
         timeout: 60000,
     },
     //
