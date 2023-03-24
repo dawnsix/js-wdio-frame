@@ -1,3 +1,5 @@
+import * as dotenv from 'dotenv'
+dotenv.config()
 
 export const config = {
   user: process.env.BROWSERSTACK_USERNAME,
@@ -14,8 +16,6 @@ export const config = {
   waitforTimeout: 10000,
   connectionRetryTimeout: 90000,
   connectionRetryCount: 3,
-  hostname: 'hub.browserstack.com',
-  services: [['browserstack']],
 
   framework: 'mocha',
   mochaOpts: {

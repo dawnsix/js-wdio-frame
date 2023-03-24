@@ -36,7 +36,7 @@ const parallelConfig = {
     ],
     commonCapabilities: {
       'bstack:options': {
-        buildName: 'sherpa-wdio-' + Date.now(),
+        buildName: 'sherpa-wdio-ci-' + Date.now(),
       }
     },
     maxInstances: 10,

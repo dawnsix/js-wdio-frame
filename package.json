@@ -6,11 +6,13 @@
     "@wdio/cli": "^8.6.2",
     "@wdio/local-runner": "^8.6.2",
     "@wdio/mocha-framework": "^8.6.1",
-    "@wdio/spec-reporter": "^8.4.0"
+    "@wdio/spec-reporter": "^8.4.0",
+    "geckodriver": "^3.2.0",
+    "wdio-geckodriver-service": "^4.1.0"
   },
   "scripts": {
-    "test": "wdio run ./wdio.conf.js",
-    "test-bs": "npx wdio conf/test.conf.js"
+    "test": "wdio run conf/local.conf.js",
+    "test-bs": "npx wdio conf/remote.conf.js"
   },
   "dependencies": {
     "chai": "^4.3.7",

@@ -1,11 +1,32 @@
 import { data } from '../../data/environment.js'
 
 export default class Page {
-    /**
-    * Opens a sub page of the page
-    * @param path path of the sub page (e.g. /path/to/page.html)
-    */
+
+    selector = '';
+
+    constructor(selector) {
+        this.selector = selector;
+    }
+
+    waitForIsShown = async (isShown = true) => {
+        try{
+            const result = await $(this.selector).waitForDisplayed({
+                timeout: DEFAULT_TIMEOUT,
+                reverse: !isShown
+            });
+
+            return !!result;
+        } catch (e) {
+            return !isShown;
+        }
+    }
+
+    isDisplayed = async () => {
+        return $(this.selector).isDisplayed();
+    }
+
     open (path) {
         return browser.url(`${data.target}${path}`)
     }
+    
 }

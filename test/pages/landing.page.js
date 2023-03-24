@@ -1,6 +1,10 @@
 import Page from './page.js';
 
 class LandingPage extends Page {
+
+    constructor() {
+        super('#hp-hdr');
+    }
     
     get btnLogin () {
         return $("//a[text()='Login']");

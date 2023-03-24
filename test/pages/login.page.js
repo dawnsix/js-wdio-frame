@@ -2,6 +2,10 @@ import Page from './page.js';
 
 class LoginPage extends Page {
 
+    constructor() {
+        super('#email');
+    }
+
     get fldEmail () {
         return $('#email');
     }
